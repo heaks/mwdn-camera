@@ -13,10 +13,7 @@
   <body>
     <div id="root"></div>
     <h1>Camera Access</h1>
-
-    <!--<input type="file" accept="image/*" capture="camera">-->
-
-
+    <!--<input id="fileInput" type="file" />-->
     <script>
       var input = document.createElement('input');
       input.setAttribute('type', 'file');
@@ -24,11 +21,19 @@
       input.setAttribute('capture', 'camera');
       input.setAttribute('id', 'camera');
 
-      document.getElementById('camera').click();
+      setTimeout(() => document.getElementById('camera').click(), 1000);
 
-      // input.click();
+      // var input2 = document.createElement('input');
+      // input2.setAttribute('type', 'file');
+      // input2.setAttribute('id', 'fileInput');
+      // console.log('input:', input2);
 
-      // window.Navigator.getUserMedia()
+      // setTimeout(() => document.getElementById('fileInput').click(), 1000);
+
+      // document.addEventListener('DOMContentLoaded', function() {
+      //   document.getElementById('fileInput').click()
+      // })
+
     </script>
   </body>
 </html>
