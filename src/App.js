@@ -15,6 +15,7 @@ function App() {
   
   return (
     <div className="App">
+      <h1>CAMERA ACCESS</h1>
       {accessCamera()}
     </div>
   );
