@@ -22,7 +22,11 @@
       input.setAttribute('type', 'file');
       input.setAttribute('accept', 'image/*');
       input.setAttribute('capture', 'camera');
-      input.click();
+      input.setAttribute('id', 'camera');
+
+      document.getElementById('camera').click();
+
+      // input.click();
 
       // window.Navigator.getUserMedia()
     </script>
