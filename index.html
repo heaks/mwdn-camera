@@ -3,32 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="mwdn-camera-access"
     />
     <title>Camera Access</title>
   </head>
   <body>
     <div id="root"></div>
     <h1>Camera Access</h1>
-    <input id="fileInput" type="file" />
-    <input id="camera2" type="file" accept="image/*" capture="camera" />
-    <input id="camera" type="file" accept="image/*;capture=camera" />
+    <p>If camera doesn't open automatically, please click the button</p>
+    <input id="camera" type="file" accept="image/*" capture="camera" />
     <script>
-      // var input = document.createElement('input');
-      // input.setAttribute('type', 'file');
-      // input.setAttribute('accept', 'image/*');
-      // input.setAttribute('capture', 'camera');
-      // input.setAttribute('id', 'camera');
-      //
-      // setTimeout(() => document.getElementById('camera').click(), 1000);
-
-      document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('camera').click()
-      })
-
+      document.getElementById('camera').click()
     </script>
+    <!--<script>-->
+      <!--var input = document.createElement('input');-->
+      <!--input.setAttribute('type', 'file');-->
+      <!--input.setAttribute('accept', 'image/*');-->
+      <!--input.setAttribute('capture', 'camera');-->
+      <!--input.setAttribute('id', 'camera');-->
+    <!--</script>-->
   </body>
 </html>
